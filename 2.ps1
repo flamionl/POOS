@@ -45,15 +45,15 @@ function menu {
     }
     $choice = [int]$choice
     switch ($choice) {
-        1 {$phrase = Read-Host "entrez une phrase à inverser"; Write-Log"info" "inversion";reverse($phrase)}
+        1 {$phrase = Read-Host "entrez une phrase à inverser"; Write-Log "info" "inversion";reverse($phrase)}
         2 {Write-Host "Bientôt disponible"}
         3 {Write-Log "info" "script exit";Exit 0}
     }
 
 }
-Write-Log("info","démarrage")
+Write-Log "info" "démarrage"
 Set-RegKey "HKLM:\SOFTWARE" "Test-Version" "fr"
 
 
-Write-Log("info","fin")
+Write-Log "info" "fin"
 
