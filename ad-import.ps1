@@ -44,7 +44,7 @@ foreach ($User in $ADUsers) {
 
 
 
-    New-ADUser -Name $username -GivenName $firstname -Surname $lastname -Department $departement -Path $ou -AccountPassword $password -Credential $adcred
+    New-ADUser -Name $username -Enable true -GivenName $firstname -Surname $lastname -Department $departement -Path $ou -AccountPassword $password -Credential $adcred
 
 
 
